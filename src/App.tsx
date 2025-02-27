@@ -193,31 +193,6 @@ function App() {
             <form onSubmit={handleSubmit}>
               <h2 className="text-xl font-semibold text-gray-700 mb-4">Request</h2>
               
-              {/* Environment Selection */}
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Environment</label>
-                <div className="flex space-x-4">
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      className="form-radio text-blue-600"
-                      checked={environment === 'development'}
-                      onChange={() => setEnvironment('development')}
-                    />
-                    <span className="ml-2">Development</span>
-                  </label>
-                  <label className="inline-flex items-center">
-                    <input
-                      type="radio"
-                      className="form-radio text-blue-600"
-                      checked={environment === 'production'}
-                      onChange={() => setEnvironment('production')}
-                    />
-                    <span className="ml-2">Production</span>
-                  </label>
-                </div>
-              </div>
-              
               {/* Base URL with Save Button */}
               <div className="mb-4">
                 <label htmlFor="baseUrl" className="block text-sm font-medium text-gray-700 mb-1">
