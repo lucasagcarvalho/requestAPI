@@ -5,7 +5,7 @@ function App() {
   const [method, setMethod] = useState<'GET' | 'POST' | 'PUT'>('GET');
   const [url, setUrl] = useState('');
   const [baseUrl, setBaseUrl] = useState('');
-  const [environment, setEnvironment] = useState<'development' | 'production'>('development');
+  const [environment] = useState<'development' | 'production'>('development');
   const [useAuth, setUseAuth] = useState(false);
   const [token, setToken] = useState('');
   const [jsonBody, setJsonBody] = useState('');
